@@ -13,6 +13,11 @@ namespace SolutionStrips.DATA.Context
         public SolutionStripsContext(DbContextOptions<SolutionStripsContext> options) : base(options) { }
 
         public DbSet<Auteur> Auteurs { get; set; } // Use a getter method here
+        public DbSet<Strip> Strips { get; set; } // Use a getter method here
+
+
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

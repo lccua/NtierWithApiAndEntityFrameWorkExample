@@ -1,15 +1,8 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-
-
-namespace SolutionStrips.DOMAIN.Models
+﻿namespace SolutionStrips.API.Models.Output
 {
-    public class Auteur
+    public class AuteurRestOutputDTO
     {
-        
-
         public int Id { get; set; }
-
         public string Naam { get; set; }
         public int Leeftijd { get; set; }
         public string Achtergrond { get; set; }

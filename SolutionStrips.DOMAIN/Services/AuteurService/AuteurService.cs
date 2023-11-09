@@ -9,7 +9,7 @@ using SolutionStrips.DOMAIN.Interfaces;
 
 namespace SolutionStrips.DOMAIN.Services.AuteurService
 {
-    public class AuteurService : IAuteurService
+    public class AuteurService
     {
         private IAuteurRepository _auteurRepo;
 
@@ -22,5 +22,27 @@ namespace SolutionStrips.DOMAIN.Services.AuteurService
         {
             _auteurRepo.VoegAuteurToe(auteur);
         }
+
+        public Auteur VraagAuteurOp(int id)
+        {
+            return _auteurRepo.VraagAuteurOp(id);
+        }
+
+        public void UpdateAuteur(int id, Auteur auteur)
+        {
+            _auteurRepo.UpdateAuteur(id,auteur);
+        }
+
+        public void VerwijderAuteur(int id)
+        {
+            _auteurRepo.VerwijderAuteur(id);
+        }
+
+        public IEnumerable<Auteur> VraagAlleAuteursOp()
+        {
+            return _auteurRepo.VraagAlleAuteursOp();
+        }
+            
+
     }
 }

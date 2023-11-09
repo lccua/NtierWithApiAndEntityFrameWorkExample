@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SolutionStrips.DATA.Context;
 
@@ -10,9 +11,11 @@ using SolutionStrips.DATA.Context;
 namespace SolutionStrips.DATA.Migrations
 {
     [DbContext(typeof(SolutionStripsContext))]
-    partial class SolutionStripsContextModelSnapshot : ModelSnapshot
+    [Migration("20231109154453_init1")]
+    partial class init1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

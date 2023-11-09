@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SolutionStrips.DOMAIN.Services.AuteurService
+namespace SolutionStrips.DOMAIN.Interfaces
 {
-    public interface IAuteurService
+    public interface IStripRepository
     {
-        void VoegAuteurToe(Auteur auteur);
+        void VoegStripToe(Strip strip);
     }
 }

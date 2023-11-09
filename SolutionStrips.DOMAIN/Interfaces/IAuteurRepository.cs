@@ -10,5 +10,10 @@ namespace SolutionStrips.DOMAIN.Interfaces
     public interface IAuteurRepository
     {
         void VoegAuteurToe(Auteur auteur);
+        Auteur VraagAuteurOp(int id);
+        void UpdateAuteur(int id, Auteur auteur);
+        void VerwijderAuteur(int id);
+        IEnumerable<Auteur> VraagAlleAuteursOp();
+
     }
 }
